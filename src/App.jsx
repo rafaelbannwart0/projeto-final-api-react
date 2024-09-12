@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { Cat } from 'lucide-react'
 import './App.css'
 
 function App() {
@@ -50,7 +49,6 @@ function App() {
         onMouseDown={e => e.currentTarget.style.transform = 'scale(0.98)'} 
         onMouseUp={e => e.currentTarget.style.transform = 'scale(1)'} 
       >
-        <Cat style={{ marginRight: '8px' }} />
         Mostrar Fato de Gato
       </button>
     </div>
