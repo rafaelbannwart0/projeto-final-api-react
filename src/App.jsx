@@ -7,7 +7,7 @@ function App() {
 
   const getPokemonData = async () => {
     try {
-      const response = await fetch(`http://127.0.0.1:8000/api/funcats`, {
+      const response = await fetch(`https://pokeapi.co/api/v2/language/2`, {
         method: 'GET', // or 'GET', 'PUT', 'DELETE', etc.
         headers: {
           'Content-Type': 'application/json',
