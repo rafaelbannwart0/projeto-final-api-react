@@ -7,18 +7,18 @@ function App() {
 
   const getPokemonData = async () => {
     try {
-      const response = await fetch(`https://pokeapi.co/api/v2/language/2`, {
+      const response = await fetch(`https://7e3b-2804-1b3-6641-8101-f238-c8dd-a13e-7d4f.ngrok-free.app/api/cats`, {
         method: 'GET', // or 'GET', 'PUT', 'DELETE', etc.
         headers: {
           'Content-Type': 'application/json',
-          "Authorization": "Bearer 3|r1WLhRkGxbJ5IsnAHRqtND5qiSGgBYwQjKDtznGi45ad661c"
+          'ngrok-skip-browser-warning': undefined
         },
       });
       
       const data = await response.json();
-      const item = data.data.funcats[Math.floor(Math.random() * data.data.funcats.length)]
-      setFunfact(item.fun)
-      console.log("data", data.data.funcats)
+      const item = data[Math.floor(Math.random() * data.length)]
+      setFunfact(item.fact)
+      console.log("data", data)
     } catch (error) {
       console.error("Erro ao buscar o Pokémon:", error);
     }
