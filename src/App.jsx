@@ -11,7 +11,8 @@ function App() {
         method: 'GET', // or 'GET', 'PUT', 'DELETE', etc.
         headers: {
           'Content-Type': 'application/json',
-          'ngrok-skip-browser-warning': undefined
+          'ngrok-skip-browser-warning': undefined,
+          'Access-Control-Allow-Origin': '*'
         },
       });
       
