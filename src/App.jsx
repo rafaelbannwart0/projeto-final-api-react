@@ -33,7 +33,7 @@ function App() {
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px' }}>
      <h1 style={{ marginTop: '20px', fontSize: '18px', color: '#333' }}>{funfact}</h1>
       <button 
-        onClick={() => getPokemonData} 
+        onClick={() => getPokemonData()} 
         style={{
           backgroundColor: '#6200ea', 
           color: 'white', 
